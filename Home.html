@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Shivaji College Udgir | Excellence in Higher Education</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#005BBB",
+                        "secondary": "#002F56",
+                        "accent": "#FFC72C",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+    <!-- Top Navigation Bar -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 gap-4">
+
+                <div class="flex items-center gap-2 min-w-0 flex-shrink-0 ">
+                    <span class="material-symbols-outlined text-3xl text-primary flex-shrink-0">account_balance</span>
+                    <div class="flex flex-col min-w-0 flex-wrap">
+                        <h1
+                            class="text-sm sm:text-base md:text-lg lg:text-xl font-bold leading-tight text-secondary dark:text-slate-100 whitespace-normal line-clamp-2">
+                            Chhatrapati Shivaji Raje Mahavidyalaya Udgir
+                        </h1>
+                        <span class="text-[8px] uppercase tracking-wider font-semibold text-primary truncate">
+                            Accredited by NAAC A<sup>+</sup>
+                        </span>
+                    </div>
+                </div>
+
+                <nav class="hidden xl:flex items-center gap-6 px-4">
+                    <a class="text-sm font-semibold text-secondary hover:text-primary dark:text-slate-200 transition-colors"
+                        href="Home.html">Home</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors"
+                        href="AboutUs.html">About</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors"
+                        href="Academics.html">Academics</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors"
+                        href="Admissions.html">Admissions</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors"
+                        href="ContactUs.html">Contact</a>
+                </nav>
+
+                <div class="flex items-center gap-3 flex-shrink-0">
+                    <div
+                        class="hidden lg:flex items-center bg-slate-100 dark:bg-slate-800 rounded-full px-3 py-1.5 border border-transparent focus-within:border-primary/30 transition-all">
+                        <span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+                        <input
+                            class="bg-transparent border-none focus:ring-0 text-sm w-24 xl:w-32 placeholder:text-slate-400"
+                            placeholder="Search..." type="text" />
+                    </div>
+
+                    <button
+                        class="hidden sm:block bg-primary hover:bg-secondary text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-md shadow-primary/10 whitespace-nowrap">
+                        Student Login
+                    </button>
+
+                    <button id="mobile-menu-button"
+                        class="xl:hidden p-2 text-secondary dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img alt="College Building" class="w-full h-full object-cover"
+                    data-alt="Grand main entrance of Shivaji College Udgir campus"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDksl6bllTWdUJNSEbSiDGGNif7xlzdddyztAFV-RcAsRfCF8qIjl3OBmE21PpQiYNgECjE3KYv32l9N_idRw7CKxxj82upqeZmFQhRZfw5VBLU_IYX7tkzS1ubSTI0HLavk9bFsN8a1J9YJJECLEyeFi702xOZmj6-T_XxXtrs7DA71T2Ccq7z5hDBi8tav6gMRzU6pfToK27s2WRaDWOGGNjwYihC5gJ3XbWZ6uzSVJm9QOI7Sph-gcV37ci4ZsMHNYWgRGr3eX9D" />
+                <div class="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/40 to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-left">
+                <div class="max-w-2xl">
+                    <span
+                        class="inline-block bg-accent text-secondary px-3 py-1 rounded text-xs font-bold uppercase tracking-widest mb-4">Established
+                        1968</span>
+                    <h1 class="text-5xl md:text-7xl font-black text-white leading-[1.1] mb-6">
+                        Excellence in <span class="text-accent underline decoration-4 underline-offset-8">Higher
+                            Education</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-100 mb-10 leading-relaxed font-light">
+                        Empowering students through quality education, holistic development, and sustainable social
+                        impact in the heart of Udgir.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="Admissions.html"><button
+                                class="bg-primary hover:bg-white hover:text-primary text-white px-8 py-4 rounded-xl font-bold transition-all flex items-center gap-2">
+                                Explore Programs <span class="material-symbols-outlined">arrow_forward</span>
+                            </button></a>
+                        <button
+                            class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-xl font-bold transition-all">
+                            Campus Tour
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Statistics Strip -->
+        <div class="max-w-7xl mx-auto px-4 -mt-16 relative z-20">
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-2xl border-b-4 border-accent">
+                <div class="text-center border-r border-slate-100 dark:border-slate-800 last:border-0">
+                    <p class="text-3xl font-black text-primary">50+</p>
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-tighter">Years of Legacy</p>
+                </div>
+                <div class="text-center border-r border-slate-100 dark:border-slate-800 last:border-0">
+                    <p class="text-3xl font-black text-primary">5000+</p>
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-tighter">Students Enrolled</p>
+                </div>
+                <div class="text-center border-r border-slate-100 dark:border-slate-800 last:border-0">
+                    <p class="text-3xl font-black text-primary">120+</p>
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-tighter">Expert Faculty</p>
+                </div>
+                <div class="text-center last:border-0">
+                    <p class="text-3xl font-black text-primary">A+</p>
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-tighter">NAAC Accreditation</p>
+                </div>
+            </div>
+        </div>
+        <!-- News and Principal Message Section -->
+        <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Principal's Message -->
+                <div class="lg:col-span-1">
+                    <h2 class="text-2xl font-bold text-secondary dark:text-slate-100 mb-8 flex items-center gap-2">
+                        <span class="w-8 h-1 bg-accent inline-block"></span> Principal's Message
+                    </h2>
+                    <div
+                        class="bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-xl border border-slate-100 dark:border-slate-800">
+                        <div class="relative mb-6">
+                            <img alt="Principal"
+                                class="w-full h-64 object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500"
+                                data-alt="Portrait of the College Principal in a formal setting"
+                                src="src/principal.jpg" />
+                            <div
+                                class="absolute -bottom-4 right-4 bg-accent text-secondary px-4 py-2 rounded font-bold text-sm shadow-lg">
+                                Dr. R. M. Manjre
+                            </div>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 italic mb-4 leading-relaxed">
+                            "Our mission is to foster an environment where intellectual curiosity meets ethical
+                            grounding. We strive to create leaders of tomorrow who are not only professionally competent
+                            but socially responsible."
+                        </p>
+                        <a class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
+                            href="#">
+                            Read Full Message <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- News / Circulars / Updates -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center justify-between mb-8">
+                        <h2 class="text-2xl font-bold text-secondary dark:text-slate-100 flex items-center gap-2">
+                            <span class="w-8 h-1 bg-accent inline-block"></span> News &amp; Circulars
+                        </h2>
+                        <a class="text-primary text-sm font-bold border-b-2 border-primary/20" href="#">View All
+                            Updates</a>
+                    </div>
+                    <div class="space-y-4">
+                        <div
+                            class="flex items-center gap-6 p-4 bg-white dark:bg-slate-900 rounded-xl border-l-4 border-primary shadow-sm hover:shadow-md transition-all">
+                            <div
+                                class="flex flex-col items-center justify-center min-w-[60px] h-[60px] bg-slate-50 dark:bg-slate-800 rounded-lg">
+                                <span class="text-primary font-black text-lg">24</span>
+                                <span class="text-[10px] font-bold uppercase text-slate-500">Oct</span>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-bold text-secondary dark:text-slate-100 mb-1 hover:text-primary transition-colors cursor-pointer">
+                                    MA Admission Second List Published for AY 2023-24</h3>
+                                <p class="text-sm text-slate-500 line-clamp-1">The second merit list for Master of Arts
+                                    (English/Marathi) has been released...</p>
+                            </div>
+                            <span class="ml-auto material-symbols-outlined text-slate-300">description</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-6 p-4 bg-white dark:bg-slate-900 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-all">
+                            <div
+                                class="flex flex-col items-center justify-center min-w-[60px] h-[60px] bg-slate-50 dark:bg-slate-800 rounded-lg">
+                                <span class="text-accent font-black text-lg">18</span>
+                                <span class="text-[10px] font-bold uppercase text-slate-500">Oct</span>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-bold text-secondary dark:text-slate-100 mb-1 hover:text-primary transition-colors cursor-pointer">
+                                    Semester End Examination Schedule - Winter 2023</h3>
+                                <p class="text-sm text-slate-500 line-clamp-1">Examination timetables for all
+                                    Undergraduate and Postgraduate courses...</p>
+                            </div>
+                            <span class="ml-auto material-symbols-outlined text-slate-300">event_note</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-6 p-4 bg-white dark:bg-slate-900 rounded-xl border-l-4 border-primary shadow-sm hover:shadow-md transition-all">
+                            <div
+                                class="flex flex-col items-center justify-center min-w-[60px] h-[60px] bg-slate-50 dark:bg-slate-800 rounded-lg">
+                                <span class="text-primary font-black text-lg">12</span>
+                                <span class="text-[10px] font-bold uppercase text-slate-500">Oct</span>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-bold text-secondary dark:text-slate-100 mb-1 hover:text-primary transition-colors cursor-pointer">
+                                    National Level Webinar on NEP 2020 Implementation</h3>
+                                <p class="text-sm text-slate-500 line-clamp-1">IQAC organizes a national level webinar
+                                    for faculty development on Oct 30th...</p>
+                            </div>
+                            <span class="ml-auto material-symbols-outlined text-slate-300">campaign</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Departments -->
+        <section class="py-20 bg-secondary text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-black mb-4">Our Departments</h2>
+                    <p class="text-slate-300 max-w-2xl mx-auto">Providing a diverse range of academic disciplines
+                        designed to shape the future of our students.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-8 hover:bg-white/10 transition-all">
+                        <div
+                            class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">menu_book</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Arts</h3>
+                        <p class="text-sm text-slate-400 mb-6">Language, Literature, and Social Sciences focusing on
+                            human culture.</p>
+                        <a class="text-accent font-bold text-sm flex items-center gap-2" href="#">View Courses <span
+                                class="material-symbols-outlined text-sm">arrow_right_alt</span></a>
+                    </div>
+                    <div
+                        class="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-8 hover:bg-white/10 transition-all">
+                        <div
+                            class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">biotech</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Science</h3>
+                        <p class="text-sm text-slate-400 mb-6">Exploring Physics, Chemistry, Biology and Mathematical
+                            wonders.</p>
+                        <a class="text-accent font-bold text-sm flex items-center gap-2" href="#">View Courses <span
+                                class="material-symbols-outlined text-sm">arrow_right_alt</span></a>
+                    </div>
+                    <div
+                        class="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-8 hover:bg-white/10 transition-all">
+                        <div
+                            class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">account_balance_wallet</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Commerce</h3>
+                        <p class="text-sm text-slate-400 mb-6">Building foundations in Finance, Accounting, and Business
+                            Management.</p>
+                        <a class="text-accent font-bold text-sm flex items-center gap-2" href="#">View Courses <span
+                                class="material-symbols-outlined text-sm">arrow_right_alt</span></a>
+                    </div>
+                    <div
+                        class="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-8 hover:bg-white/10 transition-all">
+                        <div
+                            class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">computer</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">IT &amp; Computer</h3>
+                        <p class="text-sm text-slate-400 mb-6">Bridging the gap between theory and modern digital
+                            innovation.</p>
+                        <a class="text-accent font-bold text-sm flex items-center gap-2" href="#">View Courses <span
+                                class="material-symbols-outlined text-sm">arrow_right_alt</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Activities & Achievements -->
+        <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <h2 class="text-3xl font-black text-secondary dark:text-slate-100">Activities &amp; Achievements
+                    </h2>
+                    <p class="text-slate-500 mt-2">Celebrating student life and academic excellence.</p>
+                </div>
+                <div class="flex gap-2">
+                    <button
+                        class="w-12 h-12 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button
+                        class="w-12 h-12 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group">
+                    <div class="relative h-64 overflow-hidden rounded-2xl mb-4">
+                        <img alt="Cultural Fest"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            data-alt="Students performing on stage during the annual cultural festival"
+                            src="src/Fit India Freedom Run 2.0.jpeg">
+                        <div
+                            class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded">
+                            CULTURAL</div>
+                    </div>
+                    <h3
+                        class="font-bold text-lg text-secondary dark:text-slate-100 group-hover:text-primary transition-colors">
+                        Fit India Freedom Run 2.0
+                    </h3>
+                    <p class="text-slate-500 text-sm mt-2">Celebrating the vibrant spirit and diverse talents of our
+                        students through Fit India Freedom</p>
+                </div>
+                <div class="group">
+                    <div class="relative h-64 overflow-hidden rounded-2xl mb-4">
+                        <img alt="Placement"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            data-alt="Students participating in a campus recruitment drive with interviewers"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJtc-rV6a1V1SvUXeUMGZbsXgsOy5Q7HRR7RiJadu4sRSeGPG6jZaq7mK5L8Vub2onCFZ7u13Bihsr2iH9KRx9HfpNJLV1PxvomtYhEHfhtoysbyPeHfoOtUiCzRK--cf58LuFe2urOAo65p7mZWCsomZatWPgULu8K188fxWTJInYi164TXLWVmhGkQDsgDl8qIhtMbdcIPHweCOGr19LTI-SkVqbMhjGeKOEUUNLl35de2pI4u8M5-ucKOADzQtLgSihCR_8MtW2" />
+                        <div
+                            class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded">
+                            PLACEMENT</div>
+                    </div>
+                    <h3
+                        class="font-bold text-lg text-secondary dark:text-slate-100 group-hover:text-primary transition-colors">
+                        Record Placement Drive: 200+ Offers</h3>
+                    <p class="text-slate-500 text-sm mt-2">Leading MNCs visited the campus for the mega recruitment
+                        drive, marking a significant milestone.</p>
+                </div>
+                <div class="group">
+                    <div class="relative h-64 overflow-hidden rounded-2xl mb-4">
+                        <img alt="Sports"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            data-alt="Students playing volleyball on the college sports ground"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2DESyO26fcRFhsKZG_sQwWXYM-7267Up5w_-ox-vAD31075npY--z4fkX0qflgjNm3DEoKz-uoEXrPlaFhrEBKnqRdK7GhoUeL39UgCsQFs1TLrJDYGkP1ylRFiinXSokzF_3k_VY3eqfciVwvFLjYMAGfXt1H9E2WLSS7QOzbFEbcFlAq694VjqDgSrKVft1NmUbYqrjbSK0IAjLc3HNEzwx_6tNHi0MgyCxtM7tCv7W_WpDXKGP5AnW_ySGzStlD_yrBSVpSNvH" />
+                        <div
+                            class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded">
+                            SPORTS</div>
+                    </div>
+                    <h3
+                        class="font-bold text-lg text-secondary dark:text-slate-100 group-hover:text-primary transition-colors">
+                        State Level Volleyball Champions</h3>
+                    <p class="text-slate-500 text-sm mt-2">Our college volleyball team secured the first position at the
+                        Inter-University Sports Meet.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery: Glimpses of NAAC Peer Team Visit -->
+        <section class="py-24 bg-slate-50 dark:bg-slate-900/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+                <h2 class="text-3xl font-black text-secondary dark:text-slate-100 mb-4">Glimpses of NAAC Peer Team Visit
+                </h2>
+                <div class="w-24 h-1 bg-accent mx-auto"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="group relative aspect-square overflow-hidden rounded-xl cursor-zoom-in">
+                        <img alt="NAAC Visit 1"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            data-alt="NAAC team members inspecting the library facilities"
+                            src="src/naac peer team 1.jpeg">
+                        <div
+                            class="absolute inset-0 bg-secondary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-square overflow-hidden rounded-xl cursor-zoom-in">
+                        <img alt="NAAC Visit 2"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Principal presenting college reports to the NAAC peer team"
+                            src="src/naac peer team 2.jpeg">
+                        <div
+                            class="absolute inset-0 bg-secondary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-square overflow-hidden rounded-xl cursor-zoom-in">
+                        <img alt="NAAC Visit 3"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            data-alt="NAAC team interacting with students in the auditorium"
+                            src="src/nnaac peer team 3.jpeg">
+                        <div
+                            class="absolute inset-0 bg-secondary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-square overflow-hidden rounded-xl cursor-zoom-in">
+                        <img alt="NAAC Visit 4"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Group photo of the NAAC peer team with college management"
+                            src="src/naac peer team 4.jpeg">
+                        <div
+                            class="absolute inset-0 bg-secondary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA / Registration Section -->
+        <section class="py-20">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="bg-primary rounded-3xl p-12 text-center text-white relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-32 h-32 bg-accent/20 rounded-full translate-y-1/2 -translate-x-1/2">
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-black mb-6 relative z-10">Start Your Journey Today</h2>
+                    <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto relative z-10">Admissions for the academic
+                        year 2024-25 are now open. Secure your seat in one of the leading institutions of Latur
+                        district.</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
+                        <button
+                            class="bg-white text-primary px-10 py-4 rounded-xl font-bold hover:bg-accent hover:text-secondary transition-all">Apply
+                            Online Now</button>
+                        <button
+                            class="bg-secondary/40 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-xl font-bold hover:bg-secondary transition-all">Download
+                            Prospectus</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-secondary text-slate-300 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 text-white mb-6">
+                        <span class="material-symbols-outlined text-4xl">account_balance</span>
+                        <h2 class="text-xl font-bold tracking-tight">Chhatrapati Shivaji Raje Mahavidyalaya Udgir</h2>
+                    </div>
+                    <p class="text-sm leading-relaxed mb-6">
+                        Providing quality education since 1968. Affiliated with Swami Ramanand Teerth Marathwada
+                        University, Nanded.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-white text-lg">public</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-white text-lg">chat_bubble</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-white text-lg">play_circle</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Quick Links</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Academic Calendar</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Student Welfare</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Scholarships</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Alumni Association</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Contact Us</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-accent">location_on</span>
+                            <span>Chhatrapati Shivaji Raje Mahavidyalaya, Udgir, Dist. Latur, Maharashtra - 413517</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-accent">call</span>
+                            <span>+91 02385 256116</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-accent">mail</span>
+                            <span>shivacoll@rediffmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Find Us</h3>
+                    <div class="rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all">
+                        <img alt="Map Location" class="w-full h-32 object-cover"
+                            data-alt="Map location snippet showing Udgir town area" data-location="Udgir, India"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBczbl_z_h9zC6Rvdf08o8q7-X1Qdq8kVb5-c7nAZt8I7iNn0jClW9lyFp6BWkZWKaZUCLleZiTPbEe8figClzMTKE16Y0yHODIeWPTyioa13rti7v0Z7qUiairr-yLCIkBobvUUFsImaSjtBA4E1W9ti0kM6M0HpIKbIug0zYRvMbgw6Bgq-Cyd-KaypmLtrqOrWvnBWRLGLllpZ8_FJsAwT_bHzzID0wOOX2fVSDpiroD4UIhsadUe3NM0YLjLRuJs3ZhxupsahoE" />
+                    </div>
+                    <p class="mt-4 text-[10px] uppercase tracking-widest text-slate-500 font-bold">Follow campus maps
+                    </p>
+                </div>
+            </div>
+            <div
+                class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-500">
+                <p>© 2023 Shivaji Mahavidyalaya, Udgir. All Rights Reserved.</p>
+                <p>Designed for Excellence</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    // Wait for the DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const closeBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const backdrop = document.getElementById('menu-backdrop');
+
+        function toggleMenu() {
+            // This removes or adds the 'hidden' class
+            mobileMenu.classList.toggle('hidden');
+            // Prevent the background page from scrolling when menu is open
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        // Add click events to all buttons
+        if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+        if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+        if (backdrop) backdrop.addEventListener('click', toggleMenu);
+    });
+</script>
+
+</html>

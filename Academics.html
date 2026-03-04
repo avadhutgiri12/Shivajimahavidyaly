@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#005BBB",
+                        "secondary": "#002F56",
+                        "accent": "#FFC72C",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+        <header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 gap-4">
+            
+            <div class="flex items-center gap-2 min-w-0 flex-shrink-0 ">
+                <span class="material-symbols-outlined text-3xl text-primary flex-shrink-0">account_balance</span>
+                <div class="flex flex-col min-w-0 flex-wrap">
+                    <h1 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold leading-tight text-secondary dark:text-slate-100 whitespace-normal line-clamp-2">
+                        Chhatrapati Shivaji Raje Mahavidyalaya Udgir
+                    </h1>
+                    <span class="text-[8px] uppercase tracking-wider font-semibold text-primary truncate">
+                        Accredited by NAAC A<sup>+</sup>
+                    </span>
+                </div>
+            </div>
+
+            <nav class="hidden xl:flex items-center gap-6 px-4">
+                <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-200 transition-colors" href="Home.html">Home</a>
+                <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors" href="AboutUs.html">About</a>
+                <a class="text-sm font-semibold text-secondary hover:text-primary dark:text-slate-400 transition-colors" href="Academics.html">Academics</a>
+                <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors" href="Admissions.html">Admissions</a>
+                <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors" href="ContactUs.html">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-3 flex-shrink-0">
+                <div class="hidden lg:flex items-center bg-slate-100 dark:bg-slate-800 rounded-full px-3 py-1.5 border border-transparent focus-within:border-primary/30 transition-all">
+                    <span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-sm w-24 xl:w-32 placeholder:text-slate-400" placeholder="Search..." type="text" />
+                </div>
+                
+                <button class="hidden sm:block bg-primary hover:bg-secondary text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-md shadow-primary/10 whitespace-nowrap">
+                    Student Login
+                </button>
+
+                <button id="mobile-menu-button" class="xl:hidden p-2 text-secondary dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</header>
+        <main class="flex-1">
+            <section class="relative h-[320px] w-full overflow-hidden">
+                <div class="absolute inset-0 bg-secondary/60 mix-blend-multiply"></div>
+                <img class="h-full w-full object-cover" data-alt="College campus main academic building wide view"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1GYsZYtXgotVgkGBR8qyZD4yyyyxXdly9-E4OIkBSZv54qJR3Bwaf-t1ZYKsIwXpQYXgSEH8IUqgWONma2xyURD7eaizbnpROps9KftY_tOPjQ-tZOhmpBy4ZC096kcQ7ndVkYvc2sRJOVzo3ethxZuuP626qg73aLBM07NRJnPqWHTfK2RBdyuzbohAsy5UGLqzEW-d_iPxFse-mP-7v-3FGlVxptbgiW1QlPx2BoBP0E2ZQZHKV-f3LqiQNCtOdT4vfN82-XtWL" />
+                <div class="absolute inset-0 flex items-center px-4 sm:px-20 lg:px-40">
+                    <div class="max-w-2xl">
+                        <span
+                            class="mb-2 inline-block rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-wider text-secondary">Excellence
+                            in Education</span>
+                        <h2 class="text-4xl font-bold text-white md:text-5xl">Academic Programs</h2>
+                        <p class="mt-4 text-lg text-slate-100">Fostering intellectual growth and professional
+                            development through diverse streams and state-of-the-art facilities.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-secondary dark:text-primary mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined">account_balance</span>
+                        Our Faculties
+                    </h3>
+                    <div class="grid gap-6 md:grid-cols-3">
+                        <div
+                            class="group relative overflow-hidden rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
+                            <div
+                                class="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <span class="material-symbols-outlined text-3xl">palette</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-secondary dark:text-slate-100">Faculty of Arts</h4>
+                            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Offering deep
+                                insights into Languages, Literature, Social Sciences, and Humanities to shape critical
+                                thinkers.</p>
+                            <ul class="mt-4 space-y-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                                    Languages (Marathi, Hindi, English)</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                                    Political Science &amp; History</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                                    Economics &amp; Sociology</li>
+                            </ul>
+                            <a class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-primary hover:text-secondary"
+                                href="#">View Departments <span
+                                    class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                        </div>
+                        <div
+                            class="group relative overflow-hidden rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
+                            <div
+                                class="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <span class="material-symbols-outlined text-3xl">science</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-secondary dark:text-slate-100">Faculty of Science</h4>
+                            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Dedicated to
+                                discovery and innovation across physical, chemical, biological, and mathematical
+                                sciences.</p>
+                            <ul class="mt-4 space-y-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                                    Physics &amp; Chemistry</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                                    Botany &amp; Zoology</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                                    Computer Science &amp; Maths</li>
+                            </ul>
+                            <a class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-primary hover:text-secondary"
+                                href="#">View Departments <span
+                                    class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                        </div>
+                        <div
+                            class="group relative overflow-hidden rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
+                            <div
+                                class="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <span class="material-symbols-outlined text-3xl">payments</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-secondary dark:text-slate-100">Faculty of Commerce</h4>
+                            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Preparing
+                                students for the dynamic world of business, finance, accounting, and entrepreneurship.
+                            </p>
+                            <ul class="mt-4 space-y-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                                    Financial Accounting</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                                    Business Management</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                                    Banking &amp; Finance</li>
+                            </ul>
+                            <a class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-primary hover:text-secondary"
+                                href="#">View Departments <span
+                                    class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid gap-12 lg:grid-cols-2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-secondary dark:text-primary mb-6 flex items-center gap-2">
+                            <span class="material-symbols-outlined">calendar_today</span>
+                            Academic Calendar 2024-25
+                        </h3>
+                        <div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800">
+                            <table class="w-full text-left text-sm">
+                                <thead class="bg-slate-50 dark:bg-slate-800/50">
+                                    <tr>
+                                        <th class="px-4 py-3 font-bold text-secondary dark:text-slate-200">Event / Term
+                                        </th>
+                                        <th class="px-4 py-3 font-bold text-secondary dark:text-slate-200">Dates</th>
+                                    </tr>
+                                </thead>
+                                <tbody
+                                    class="divide-y divide-slate-100 dark:divide-slate-800 bg-white dark:bg-slate-900">
+                                    <tr>
+                                        <td class="px-4 py-3 font-medium">Commencement of Term I</td>
+                                        <td class="px-4 py-3 text-slate-600 dark:text-slate-400">June 15, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 font-medium">Internal Assessment I</td>
+                                        <td class="px-4 py-3 text-slate-600 dark:text-slate-400">August 20 - 25, 2024
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 font-medium">Winter Vacation</td>
+                                        <td class="px-4 py-3 text-slate-600 dark:text-slate-400">Nov 1 - Nov 15, 2024
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 font-medium">Commencement of Term II</td>
+                                        <td class="px-4 py-3 text-slate-600 dark:text-slate-400">December 1, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 font-medium">Annual Sports &amp; Culture</td>
+                                        <td class="px-4 py-3 text-slate-600 dark:text-slate-400">January 2025</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="bg-primary/5 p-4">
+                                <button class="flex items-center gap-2 text-xs font-bold text-primary">
+                                    <span class="material-symbols-outlined text-sm">download</span> DOWNLOAD COMPLETE
+                                    CALENDAR (PDF)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-secondary dark:text-primary mb-6 flex items-center gap-2">
+                            <span class="material-symbols-outlined">assignment</span>
+                            Examination Details
+                        </h3>
+                        <div class="space-y-4">
+                            <div
+                                class="flex gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+                                <div
+                                    class="flex size-12 shrink-0 items-center justify-center rounded-full bg-accent/20 text-secondary">
+                                    <span class="material-symbols-outlined">description</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-secondary dark:text-slate-200">University Exam Portal</h5>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">Access results, hall tickets,
+                                        and exam schedules directly from the SRTMU portal.</p>
+                                    <a class="mt-2 inline-block text-xs font-bold text-primary underline" href="#">Go to
+                                        Portal</a>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-4 rounded-xl bg-white p-4 shadow-sm dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+                                <div
+                                    class="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary">
+                                    <span class="material-symbols-outlined">rule</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-secondary dark:text-slate-200">Evaluation Process</h5>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">Details regarding Continuous
+                                        Internal Evaluation (CIE) and semester-end exams.</p>
+                                    <a class="mt-2 inline-block text-xs font-bold text-primary underline" href="#">Read
+                                        Guidelines</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-20">
+                    <div class="mb-8 text-center">
+                        <h3 class="text-3xl font-bold text-secondary dark:text-primary">Academic Infrastructure</h3>
+                        <p class="mt-2 text-slate-600 dark:text-slate-400">Providing world-class environment for
+                            teaching, learning, and research.</p>
+                    </div>
+                    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                        <div class="group relative aspect-square overflow-hidden rounded-2xl">
+                            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                data-alt="Modern university library with study carrels"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuABvPtD06X6T8zAvV8OMveG0jeSVkd_PasfLACIf9V4DQGJdX2bsOa9bWPUxqYzryIoDBaQXn9ks4Ue6VDDhO4zPFh1I4grKyWQTvBa5r8PaAScek6hdxhQ7WwGHX2CE0GNuaay7uqu4BtkYgFYBu9V-7gkBS-Z85zL4F5L6DizaDZ-Jjl9rvU9hmHiTvLKGWPEOscFPi5sBLBqDkWQ0R4FZWqOlkzwhSj7i4BB2p1StpYdz1gwmuUgNINvGiecoZxjcJ17aDE5tuC_" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent p-6 flex flex-col justify-end">
+                                <h5 class="text-lg font-bold text-white">Central Library</h5>
+                                <p class="text-xs text-slate-200">100,000+ books &amp; digital resources</p>
+                            </div>
+                        </div>
+                        <div class="group relative aspect-square overflow-hidden rounded-2xl">
+                            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                data-alt="Advanced science laboratory equipment"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAbDVmI8-7JMC5z7G2-WE7gIwC99JRjzrx5Zzilg6tPAZkiLD4By5P0hUYaBiT1f1oH1W000O6-j-xZl0sQ3GhHBWSEmwupnzSWP_HyOCv6bYA1jlKqX3XDFdVt8Lp4gJja1XJWDJ7b-bylBbPBf8w9x_2ZVuL3O9hrnrYgLLK5UScwW-1rYGzVJmh9Po4qqZNAriBow_WPtrNrdHALPgEjwasQ33xr6Hnfeg0CsJ3w3Lui-X4_VFb0oocMqo2UbrcTiwoIgX1NmWG" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent p-6 flex flex-col justify-end">
+                                <h5 class="text-lg font-bold text-white">ICT Labs</h5>
+                                <p class="text-xs text-slate-200">High-speed internet &amp; modern PCs</p>
+                            </div>
+                        </div>
+                        <div class="group relative aspect-square overflow-hidden rounded-2xl">
+                            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                data-alt="University classroom with auditorium seating"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK4Or92WFLMLLo0ccUNsMrbLrs24z8RypptKbahhKn6U9kqc1M7m3N21z-k7Vf4-CFExP5YEUVD2YjA5v6z9fKGZqPAHI1ggNF0E3H-d21N9amYwGgcCRWL-5XS4Vi0GW_C_y8qcMWVM7-n162FKZ70IxojfXX_sM_h-nRfXWG8kjO6py4cTsFVGybW8JRWQyfoUxrwm_trXjDhpyLlTftok9gNRvspvNnX3HdH8IFMOLSABRkIUTg95ZvXfa0-VKSF20gQNJLjV22" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent p-6 flex flex-col justify-end">
+                                <h5 class="text-lg font-bold text-white">Smart Classrooms</h5>
+                                <p class="text-xs text-slate-200">Equipped with AV teaching aids</p>
+                            </div>
+                        </div>
+                        <div class="group relative aspect-square overflow-hidden rounded-2xl">
+                            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                data-alt="Biology science laboratory researchers"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpCvsezXSfpq5XohI_y2iR0-4i8Eu5l0pBhup3x_ff2_-ziz7zNN8BbC8QBr3i1yBk_ex3yX7JyeE5ZwoY8k1wAvliXWCks64CBY7ofbwGst-LnIqaFDRaVoQV4G3WmBRqqcrSA2sFOo28H3AxxvkX7RhUntwprZVphdp3n9mANfE09nrUaIUSE2H8WSBS0-Ww26HRfOLfTr34i5-tJgOO2V6e9eZsdkoZ_SupRmWLtn1oYGOSyxH0JuJZ44cf8k85q6LDE3t2Do7t" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent p-6 flex flex-col justify-end">
+                                <h5 class="text-lg font-bold text-white">Science Labs</h5>
+                                <p class="text-xs text-slate-200">Dedicated research facilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-secondary text-slate-300 dark:bg-slate-950">
+            <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+                <div class="grid gap-12 md:grid-cols-4">
+                    <div class="col-span-1 md:col-span-1">
+                        <div class="flex items-center gap-2 text-white mb-6">
+                            <span class="material-symbols-outlined text-accent">school</span>
+                            <span class="text-lg font-bold">Chhatrapati Shivaji Raje Mahavidyalaya Udgir
+</span>
+                        </div>
+                        <p class="text-sm leading-relaxed">Dedicated to the empowerment of rural youth through quality
+                            education and character building since inception.</p>
+                    </div>
+                    <div>
+                        <h6 class="mb-6 font-bold text-white uppercase tracking-wider text-xs">Quick Links</h6>
+                        <ul class="space-y-3 text-sm">
+                            <li><a class="hover:text-primary transition-colors" href="#">College Brochure</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Mandatory Disclosures</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Student Grievance</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Alumni Portal</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="mb-6 font-bold text-white uppercase tracking-wider text-xs">Campus Info</h6>
+                        <ul class="space-y-3 text-sm">
+                            <li><a class="hover:text-primary transition-colors" href="#">Library Catalog</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Hostel Facility</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">NCC/NSS</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Sports Infrastructure</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="mb-6 font-bold text-white uppercase tracking-wider text-xs">Contact Us</h6>
+                        <address class="not-italic text-sm space-y-3">
+                            <p class="flex items-start gap-2"><span
+                                    class="material-symbols-outlined text-sm text-accent">location_on</span> Udgir,
+                                Dist. Latur, Maharashtra 413517</p>
+                            <p class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-sm text-accent">call</span> +91 2385 256116
+                            </p>
+                            <p class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-sm text-accent">mail</span>
+                                info@shivajicollegeudgir.com</p>
+                        </address>
+                    </div>
+                </div>
+                <div
+                    class="mt-12 border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-xs">© 2024 Shivaji College Udgir. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a class="text-slate-400 hover:text-white" href="#"><span
+                                class="material-symbols-outlined">social_leaderboard</span></a>
+                        <a class="text-slate-400 hover:text-white" href="#"><span
+                                class="material-symbols-outlined">link</span></a>
+                        <a class="text-slate-400 hover:text-white" href="#"><span
+                                class="material-symbols-outlined">share</span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

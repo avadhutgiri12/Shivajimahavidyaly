@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#005BBB",
+                        "secondary": "#002F56",
+                        "accent": "#FFC72C",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <div class="relative flex h-auto min-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Navigation -->
+            <header
+                class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between h-20 gap-4">
+
+                        <div class="flex items-center gap-2 min-w-0 flex-shrink-0 ">
+                            <span
+                                class="material-symbols-outlined text-3xl text-primary flex-shrink-0">account_balance</span>
+                            <div class="flex flex-col min-w-0 flex-wrap">
+                                <h1
+                                    class="text-sm sm:text-base md:text-lg lg:text-xl font-bold leading-tight text-secondary dark:text-slate-100 whitespace-normal line-clamp-2">
+                                    Chhatrapati Shivaji Raje Mahavidyalaya Udgir
+                                </h1>
+                                <span class="text-[8px] uppercase tracking-wider font-semibold text-primary truncate">
+                                    Accredited by NAAC A<sup>+</sup>
+                                </span>
+                            </div>
+                        </div>
+
+                        <nav class="hidden xl:flex items-center gap-6 px-4">
+                            <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-200 transition-colors"
+                                href="Home.html">Home</a>
+                            <a class="text-sm font-semibold text-secondary hover:text-primary dark:text-slate-400 transition-colors"
+                                href="AboutUs.html">About</a>
+                            <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors"
+                                href="Academics.html">Academics</a>
+                            <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors"
+                                href="Admissions.html">Admissions</a>
+                            <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors"
+                                href="ContactUs.html">Contact</a>
+                        </nav>
+
+                        <div class="flex items-center gap-3 flex-shrink-0">
+                            <div
+                                class="hidden lg:flex items-center bg-slate-100 dark:bg-slate-800 rounded-full px-3 py-1.5 border border-transparent focus-within:border-primary/30 transition-all">
+                                <span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+                                <input
+                                    class="bg-transparent border-none focus:ring-0 text-sm w-24 xl:w-32 placeholder:text-slate-400"
+                                    placeholder="Search..." type="text" />
+                            </div>
+
+                            <button
+                                class="hidden sm:block bg-primary hover:bg-secondary text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-md shadow-primary/10 whitespace-nowrap">
+                                Student Login
+                            </button>
+
+                            <button id="mobile-menu-button"
+                                class="xl:hidden p-2 text-secondary dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+                                <span class="material-symbols-outlined text-3xl">menu</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1">
+                <!-- Hero Banner -->
+                <div class="relative h-[300px] md:h-[400px] w-full overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center"
+                        data-alt="The majestic main building of Shivaji College Udgir architecture"
+                        style="background-image: linear-gradient(to right, rgba(0, 47, 86, 0.9), rgba(0, 91, 187, 0.4)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAul5oZU8wSo0F-UwfrDOHEuc6mmGthypbA5dOJquPeBSZVtqvnThArDeq4ImcPp2JGIHqgS8fh_utFxFPUosOe03g1DPCFR6AINga3St0uZvUxUXL43aaL3XP34E1LlhkVYQcHNlharo4ZqFD3zG0nb4INZgSuk6KbHCsVyZk7xlt3UMA4GHJS1YoPMJu7rh06eYqCFxlaDMQuQNacVLUQ2y4jmq1glsJaQoNCQMVK2W_NiOLCLYGTeKjRFZ2uIWid9qyPxFSbuAd_');">
+                    </div>
+                    <div class="relative h-full flex flex-col justify-center px-4 md:px-20 lg:px-40">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <a class="text-accent text-sm font-medium" href="#">Home</a>
+                            <span class="text-white/60 text-sm">/</span>
+                            <span class="text-white text-sm font-medium">About Us</span>
+                        </div>
+                        <h1 class="text-white text-4xl md:text-6xl font-extrabold leading-tight">About Our Institution
+                        </h1>
+                        <p class="text-white/90 text-lg md:text-xl mt-4 max-w-2xl">Empowering rural youth through
+                            excellence in education, character building, and social commitment since decades.</p>
+                    </div>
+                </div>
+                <!-- Main Content Area -->
+                <div class="px-4 md:px-20 lg:px-40 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <!-- Left Column: Content -->
+                    <div class="lg:col-span-8 space-y-12">
+                        <!-- History and Heritage -->
+                        <section>
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="h-8 w-1.5 bg-primary rounded-full"></span>
+                                <h2 class="text-3xl font-bold text-secondary dark:text-white">History and Heritage</h2>
+                            </div>
+                            <div class="prose prose-slate dark:prose-invert max-w-none">
+                                <p class="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
+                                    Established with a vision to provide quality education to the rural masses, Shivaji
+                                    College Udgir has a rich legacy of academic excellence and social commitment
+                                    spanning several decades. Rooted in the principles of Chhatrapati Shivaji Maharaj,
+                                    we strive to build a generation of scholars who are both technically proficient and
+                                    ethically grounded.
+                                </p>
+                                <p class="mt-4 text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
+                                    Over the years, the institution has evolved from a small teaching center into a
+                                    premier hub of higher learning, serving thousands of students from Udgir and
+                                    surrounding rural areas of Maharashtra.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- Mission & Vision -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-primary/5 dark:bg-primary/10 p-8 rounded-xl border border-primary/20">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined text-white text-3xl">flag</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-secondary dark:text-white mb-3">Our Mission</h3>
+                                <p class="text-slate-600 dark:text-slate-400">To provide accessible, affordable, and
+                                    high-quality education to all sectors of society, fostering an environment of
+                                    continuous learning and innovation.</p>
+                            </div>
+                            <div class="bg-accent/5 dark:bg-accent/10 p-8 rounded-xl border border-accent/20">
+                                <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined text-secondary text-3xl">visibility</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-secondary dark:text-white mb-3">Our Vision</h3>
+                                <p class="text-slate-600 dark:text-slate-400">To become a global center of excellence in
+                                    education that nurtures human values, scientific temper, and leadership skills among
+                                    the youth.</p>
+                            </div>
+                        </div>
+                        <!-- Leadership -->
+                        <section>
+                            <div class="flex items-center gap-3 mb-8">
+                                <span class="h-8 w-1.5 bg-primary rounded-full"></span>
+                                <h2 class="text-3xl font-bold text-secondary dark:text-white">Our Leadership</h2>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <!-- Leader 1 -->
+                                <div class="text-center group">
+                                    <div
+                                        class="aspect-square rounded-full overflow-hidden mb-4 border-4 border-transparent group-hover:border-primary transition-all p-1">
+                                        <img alt="Principal Dr. R. M. Manjre"
+                                            class="w-full h-full object-cover rounded-full"
+                                            data-alt="Portrait of Principal Dr. R. M. Manjre wearing formal attire"
+                                            src="src/principal.jpg" />
+                                    </div>
+                                    <h4 class="font-bold text-lg text-secondary dark:text-white">Dr. R. M. Manjre</h4>
+                                    <p class="text-primary font-semibold text-sm">Principal</p>
+                                </div>
+                                <!-- Leader 2 -->
+                                <div class="text-center group">
+                                    <div
+                                        class="aspect-square rounded-full overflow-hidden mb-4 border-4 border-transparent group-hover:border-primary transition-all p-1">
+                                        <img alt="Hon. Shri. V. G. More" class="w-full h-full object-cover rounded-full"
+                                            data-alt="Portrait of Hon. Shri. V. G. More in professional setting"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT-D_EdA4H4PiF8f-UyX9d_wgL7AKGHkKzWDYoERy8vhLOaQFbhqZHhurL-BkmKi1JwTUODGwdZEz3pbt6hxnR4ItwQgVx6rvSIuVaf25aDrXI9_erB_hosluEwDZoxBxvT2ivBmOz8p-hxr91qysIHRgAcbxgvZZK7vztZpTa_aHI9VP82a2NJD0eZB-m1HCQ2VDrHBHp2RGlr3uIdkNaCZB9Rt3VEkXLQBBkVY344ZvdRZJWddf9Fta2W9TBGlf72As0gTVRhBU3" />
+                                    </div>
+                                    <h4 class="font-bold text-lg text-secondary dark:text-white">Hon. Shri. V. G. More
+                                    </h4>
+                                    <p class="text-primary font-semibold text-sm">President</p>
+                                </div>
+                                <!-- Leader 3 -->
+                                <div class="text-center group">
+                                    <div
+                                        class="aspect-square rounded-full overflow-hidden mb-4 border-4 border-transparent group-hover:border-primary transition-all p-1">
+                                        <img alt="Shri. K. N. Jadhav" class="w-full h-full object-cover rounded-full"
+                                            data-alt="Portrait of Shri. K. N. Jadhav college secretary"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwm5OgvNLKUgQlN9gLZo_Rn-HEOOEu-VGy0JMhZs4LLg1_WzfIRU_VBTSaA1hBb5zFuawIbxMzPGrglK4geuPbt_2tEgXVtB2kq90BtiM2IuqFUbxaaaJwsc1pLXSKPorvofo0kppjoFol99Am3JUiHrX1BwC0E_-qTqBfD62yif07p3sETp2WVllngd7MmHtFfLGW0iE_8UtCwsY61vnqj8bKTMFbrRRANIbwVhe7Ghlr7Sm0BSWDIo-riTzblQJ6z71os5jhvq3R" />
+                                    </div>
+                                    <h4 class="font-bold text-lg text-secondary dark:text-white">Shri. K. N. Jadhav</h4>
+                                    <p class="text-primary font-semibold text-sm">Secretary</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Right Column: Sidebar -->
+                    <div class="lg:col-span-4 space-y-8">
+                        <!-- Accreditations -->
+                        <div class="bg-secondary text-white p-8 rounded-xl shadow-xl relative overflow-hidden">
+                            <div class="absolute -right-10 -top-10 opacity-10">
+                                <span class="material-symbols-outlined text-[150px]">verified</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-accent">workspace_premium</span>
+                                Accreditations
+                            </h3>
+                            <div class="bg-white/10 p-6 rounded-lg border border-white/20 text-center">
+                                <div class="text-4xl font-black text-accent mb-2">NAAC A+</div>
+                                <p class="text-white/80 text-sm font-medium uppercase tracking-widest">Status Certified
+                                </p>
+                                <div class="mt-4 pt-4 border-t border-white/10 text-xs text-white/60">
+                                    Third Cycle Re-accreditation
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Core Values -->
+                        <div
+                            class="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800">
+                            <h3 class="text-xl font-bold text-secondary dark:text-white mb-6 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary">auto_awesome</span>
+                                Core Values
+                            </h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-3">
+                                    <span
+                                        class="material-symbols-outlined text-primary mt-0.5 text-lg">check_circle</span>
+                                    <div>
+                                        <p class="font-bold text-slate-800 dark:text-slate-200">Academic Integrity</p>
+                                        <p class="text-sm text-slate-500">Upholding the highest standards of honesty.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span
+                                        class="material-symbols-outlined text-primary mt-0.5 text-lg">check_circle</span>
+                                    <div>
+                                        <p class="font-bold text-slate-800 dark:text-slate-200">Social Justice</p>
+                                        <p class="text-sm text-slate-500">Ensuring equality for all rural sectors.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span
+                                        class="material-symbols-outlined text-primary mt-0.5 text-lg">check_circle</span>
+                                    <div>
+                                        <p class="font-bold text-slate-800 dark:text-slate-200">Innovation</p>
+                                        <p class="text-sm text-slate-500">Encouraging new ideas and research.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span
+                                        class="material-symbols-outlined text-primary mt-0.5 text-lg">check_circle</span>
+                                    <div>
+                                        <p class="font-bold text-slate-800 dark:text-slate-200">Patriotism</p>
+                                        <p class="text-sm text-slate-500">Instilling love for the nation and heritage.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Contact Quick Card -->
+                        <div class="bg-accent p-8 rounded-xl">
+                            <h3 class="text-xl font-bold text-secondary mb-4">Have Questions?</h3>
+                            <p class="text-secondary/80 text-sm mb-6">Our admissions office is open Monday through
+                                Saturday to help you with any queries.</p>
+                            <button
+                                class="w-full bg-secondary text-white font-bold py-3 rounded-lg hover:bg-secondary/90 transition-colors">
+                                Get in Touch
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- Footer -->
+            <footer class="bg-secondary text-white py-12 px-4 md:px-20 lg:px-40">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                    <div class="col-span-1 md:col-span-2">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="size-8 text-accent">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-2xl font-bold">Chhatrapati Shivaji Raje Mahavidyalaya Udgir
+                            </h2>
+                        </div>
+                        <p class="text-slate-300 max-w-sm mb-6">A pioneering institution dedicated to educational
+                            enlightenment and holistic development of the rural population.</p>
+                        <div class="flex gap-4">
+                            <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined">public</span>
+                            </a>
+                            <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined">alternate_email</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-6 text-accent">Links</h4>
+                        <ul class="space-y-3 text-slate-300">
+                            <li><a class="hover:text-accent transition-colors" href="#">Academic Calendar</a></li>
+                            <li><a class="hover:text-accent transition-colors" href="#">Student Portal</a></li>
+                            <li><a class="hover:text-accent transition-colors" href="#">Research Center</a></li>
+                            <li><a class="hover:text-accent transition-colors" href="#">Library</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-6 text-accent">Contact</h4>
+                        <ul class="space-y-3 text-slate-300">
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm text-accent">location_on</span>
+                                Udgir, Latur, Maharashtra
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm text-accent">call</span>
+                                +91 02385 123456
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm text-accent">mail</span>
+                                info@shivajicollege.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-white/10 mt-12 pt-8 text-center text-slate-400 text-sm">
+                    © 2024 Shivaji Mahavidyalaya Udgir. All rights reserved.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#005BBB",
+                        "secondary": "#002F56",
+                        "accent": "#FFC72C",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Navigation -->
+        <header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 gap-4">
+            
+            <div class="flex items-center gap-2 min-w-0 flex-shrink-0 ">
+                <span class="material-symbols-outlined text-3xl text-primary flex-shrink-0">account_balance</span>
+                <div class="flex flex-col min-w-0 flex-wrap">
+                    <h1 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold leading-tight text-secondary dark:text-slate-100 whitespace-normal line-clamp-2">
+                        Chhatrapati Shivaji Raje Mahavidyalaya Udgir
+                    </h1>
+                    <span class="text-[8px] uppercase tracking-wider font-semibold text-primary truncate">
+                        Accredited by NAAC A<sup>+</sup>
+                    </span>
+                </div>
+            </div>
+
+            <nav class="hidden xl:flex items-center gap-6 px-4">
+                <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-200 transition-colors" href="Home.html">Home</a>
+                <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors" href="AboutUs.html">About</a>
+                <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors" href="Academics.html">Academics</a>
+                <a class="text-sm font-semibold text-secondary hover:text-primary dark:text-slate-400 transition-colors" href="Admissions.html">Admissions</a>
+                <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 transition-colors" href="ContactUs.html">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-3 flex-shrink-0">
+                <div class="hidden lg:flex items-center bg-slate-100 dark:bg-slate-800 rounded-full px-3 py-1.5 border border-transparent focus-within:border-primary/30 transition-all">
+                    <span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-sm w-24 xl:w-32 placeholder:text-slate-400" placeholder="Search..." type="text" />
+                </div>
+                
+                <button class="hidden sm:block bg-primary hover:bg-secondary text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-md shadow-primary/10 whitespace-nowrap">
+                    Student Login
+                </button>
+
+                <button id="mobile-menu-button" class="xl:hidden p-2 text-secondary dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</header>
+        <main class="flex-1 max-w-[1200px] mx-auto w-full px-6 py-8">
+            <!-- Hero Section -->
+            <div class="mb-12">
+                <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl min-h-[320px] relative group"
+                    data-alt="Modern college campus building with green lawn"
+                    style='background-image: linear-gradient(0deg, rgba(0, 47, 86, 0.8) 0%, rgba(0, 47, 86, 0.2) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkrRyZKB1Ys6-ytI51PYG8jEwZ67RLo6bEheKCm22mSulp8HRf5dkZCIZhBNo-UQPPpqiSZVc_lTa7tnRISjBuNT4o-AGSSKg2zWWQZmqO4-qUZmy31G3Fw7OMVkSAMdsWSfFiEwGSMRAA9ta8gSsWClA7nkAQixHLTBYiYFsQh59gxd1PZI5IBfL9nlMJdUnKkpcnTZ2AVJKzPv60akxbAg8sh4hAcjlDhUQqwNl3dEChKPXlWDr91H_Com_LZQDmtfHqhLjC4XIH");'>
+                    <div class="p-8">
+                        <span
+                            class="bg-accent text-secondary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 inline-block">Now
+                            Open</span>
+                        <h1 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-tight">Admissions
+                            2024-25</h1>
+                        <p class="text-slate-200 mt-2 max-w-xl">Join a community of learners, innovators, and leaders.
+                            Start your journey with one of the most prestigious institutions in the region.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Admission Process Header -->
+            <div class="flex flex-col gap-3 mb-8">
+                <h2
+                    class="text-secondary dark:text-white text-3xl font-black leading-tight tracking-tight border-l-4 border-accent pl-4">
+                    Admission Process</h2>
+                <p class="text-slate-600 dark:text-slate-400 text-lg">Secure your future at Shivaji College in four
+                    simple steps.</p>
+            </div>
+            <!-- 4-Step Process Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+                <!-- Step 1 -->
+                <div
+                    class="flex flex-col gap-4 p-6 bg-white dark:bg-secondary/20 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm relative overflow-hidden group">
+                    <div
+                        class="absolute -right-2 -top-2 opacity-10 text-6xl font-black text-primary group-hover:opacity-20 transition-opacity">
+                        01</div>
+                    <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+                        <span class="material-symbols-outlined">app_registration</span>
+                    </div>
+                    <div>
+                        <h3 class="text-secondary dark:text-white text-lg font-bold">Online Registration</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Fill out the comprehensive
+                            application form on our centralized admission portal with your personal and academic
+                            details.</p>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div
+                    class="flex flex-col gap-4 p-6 bg-white dark:bg-secondary/20 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm relative overflow-hidden group">
+                    <div
+                        class="absolute -right-2 -top-2 opacity-10 text-6xl font-black text-primary group-hover:opacity-20 transition-opacity">
+                        02</div>
+                    <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+                        <span class="material-symbols-outlined">fact_check</span>
+                    </div>
+                    <div>
+                        <h3 class="text-secondary dark:text-white text-lg font-bold">Document Verification</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Upload or submit original scanned
+                            documents for physical and digital verification by our academic committee.</p>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div
+                    class="flex flex-col gap-4 p-6 bg-white dark:bg-secondary/20 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm relative overflow-hidden group">
+                    <div
+                        class="absolute -right-2 -top-2 opacity-10 text-6xl font-black text-primary group-hover:opacity-20 transition-opacity">
+                        03</div>
+                    <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+                        <span class="material-symbols-outlined">format_list_numbered</span>
+                    </div>
+                    <div>
+                        <h3 class="text-secondary dark:text-white text-lg font-bold">Merit List</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Check the official college website
+                            for the department-wise merit list based on qualifying examination scores.</p>
+                    </div>
+                </div>
+                <!-- Step 4 -->
+                <div
+                    class="flex flex-col gap-4 p-6 bg-white dark:bg-secondary/20 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm relative overflow-hidden group">
+                    <div
+                        class="absolute -right-2 -top-2 opacity-10 text-6xl font-black text-primary group-hover:opacity-20 transition-opacity">
+                        04</div>
+                    <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+                        <span class="material-symbols-outlined">verified_user</span>
+                    </div>
+                    <div>
+                        <h3 class="text-secondary dark:text-white text-lg font-bold">Enrollment</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Secure your seat by paying the
+                            admission fees and completing the final enrollment formalities.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Eligibility Criteria -->
+            <section class="mb-16">
+                <h2 class="text-secondary dark:text-white text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">school</span> Eligibility Criteria
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- UG -->
+                    <div
+                        class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-secondary/10">
+                        <div class="bg-primary text-white w-fit px-3 py-1 rounded text-xs font-bold mb-4">UG PROGRAMS
+                        </div>
+                        <h3 class="text-secondary dark:text-white text-xl font-bold mb-4">B.A. / B.Sc. / B.Com</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2 text-sm">
+                                <span class="material-symbols-outlined text-accent text-lg">check_circle</span>
+                                <span>Passed 10+2 (HSC) or equivalent from a recognized board.</span>
+                            </li>
+                            <li class="flex items-start gap-2 text-sm">
+                                <span class="material-symbols-outlined text-accent text-lg">check_circle</span>
+                                <span>Minimum 45% aggregate marks (40% for reserved categories).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Professional -->
+                    <div class="p-6 rounded-xl border-2 border-primary bg-primary/5">
+                        <div class="bg-accent text-secondary w-fit px-3 py-1 rounded text-xs font-bold mb-4">
+                            PROFESSIONAL</div>
+                        <h3 class="text-secondary dark:text-white text-xl font-bold mb-4">BCA / B.Voc</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2 text-sm">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                <span>Passed 10+2 with Mathematics or IT as a subject preferred.</span>
+                            </li>
+                            <li class="flex items-start gap-2 text-sm">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                <span>Must clear the college entrance aptitude test.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- PG -->
+                    <div
+                        class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-secondary/10">
+                        <div class="bg-secondary text-white w-fit px-3 py-1 rounded text-xs font-bold mb-4">PG PROGRAMS
+                        </div>
+                        <h3 class="text-secondary dark:text-white text-xl font-bold mb-4">M.A. / M.Sc. / M.Com</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2 text-sm">
+                                <span class="material-symbols-outlined text-accent text-lg">check_circle</span>
+                                <span>Bachelor's degree in relevant discipline from a recognized University.</span>
+                            </li>
+                            <li class="flex items-start gap-2 text-sm">
+                                <span class="material-symbols-outlined text-accent text-lg">check_circle</span>
+                                <span>Aggregate 50% marks in graduation.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Fee Structure Table -->
+            <section class="mb-16">
+                <h2 class="text-secondary dark:text-white text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">payments</span> Fee Structure (Annual)
+                </h2>
+                <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <table class="w-full text-left border-collapse bg-white dark:bg-secondary/5">
+                        <thead>
+                            <tr class="bg-secondary text-white">
+                                <th class="px-6 py-4 font-bold uppercase text-xs">Course Name</th>
+                                <th class="px-6 py-4 font-bold uppercase text-xs text-center">Duration</th>
+                                <th class="px-6 py-4 font-bold uppercase text-xs text-right">General (₹)</th>
+                                <th class="px-6 py-4 font-bold uppercase text-xs text-right">Reserved (₹)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                            <tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+                                <td class="px-6 py-4 font-medium">B.A. (Arts)</td>
+                                <td class="px-6 py-4 text-center">3 Years</td>
+                                <td class="px-6 py-4 text-right">4,500</td>
+                                <td class="px-6 py-4 text-right">1,200</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+                                <td class="px-6 py-4 font-medium">B.Sc. (Science)</td>
+                                <td class="px-6 py-4 text-center">3 Years</td>
+                                <td class="px-6 py-4 text-right">7,200</td>
+                                <td class="px-6 py-4 text-right">2,100</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+                                <td class="px-6 py-4 font-medium">B.Com (Commerce)</td>
+                                <td class="px-6 py-4 text-center">3 Years</td>
+                                <td class="px-6 py-4 text-right">5,800</td>
+                                <td class="px-6 py-4 text-right">1,500</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+                                <td class="px-6 py-4 font-medium">BCA (Computer App)</td>
+                                <td class="px-6 py-4 text-center">3 Years</td>
+                                <td class="px-6 py-4 text-right">18,500</td>
+                                <td class="px-6 py-4 text-right">8,500</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+                                <td class="px-6 py-4 font-medium">Post Graduation (MA/MSc)</td>
+                                <td class="px-6 py-4 text-center">2 Years</td>
+                                <td class="px-6 py-4 text-right">12,000</td>
+                                <td class="px-6 py-4 text-right">4,200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="mt-4 text-xs text-slate-500 italic">* Fees are subject to change as per University and
+                    Government regulations. Examination fees are extra.</p>
+            </section>
+            <!-- Call to Action -->
+            <div class="bg-secondary rounded-2xl p-8 md:p-12 text-center text-white relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10"
+                    style="background-image: radial-gradient(circle at 20% 50%, #FFC72C 0%, transparent 50%);"></div>
+                <div class="relative z-10 max-w-2xl mx-auto">
+                    <h2 class="text-3xl font-bold mb-4">Ready to start your journey?</h2>
+                    <p class="text-slate-300 mb-8">Download our comprehensive brochure or contact our helpdesk for any
+                        assistance regarding the admission process.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button
+                            class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined">description</span> Download Brochure
+                        </button>
+                        <button
+                            class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined">help_outline</span> Contact Admissions
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-secondary border-t border-slate-200 dark:border-slate-800 py-12 px-6">
+            <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 text-primary mb-4">
+                        <span class="material-symbols-outlined text-3xl">account_balance</span>
+                        <h3 class="text-xl font-bold text-secondary dark:text-white">Chhatrapati Shivaji Raje Mahavidyalaya Udgir
+</h3>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 max-w-sm">Dedicated to provide qualitative and
+                        value-based education to the rural masses and to build a vibrant and inclusive society.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-secondary dark:text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">University Portal</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Scholarships</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Result Portal</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Alumni</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-secondary dark:text-white mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-sm text-slate-500 dark:text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                            <span>Near Main Bus Stand, Udgir,<br />Dist. Latur - 413517</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-lg">call</span>
+                            <span>02385-256116</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 text-center text-slate-400 text-xs">
+                © 2024 Shivaji College Udgir. All Rights Reserved. Designed for Excellence.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
